@@ -1,0 +1,37 @@
+{
+  "name": "cordova-plugin-photo-album",
+  "version": "0.0.1",
+  "description": "cordova plugin for getting photo album.",
+  "types": "./types/index.d.ts",
+  "files": [
+    "src",
+    "types",
+    "www",
+    "plugin.xml"
+  ],
+  "cordova": {
+    "id": "cordova-plugin-photo-album",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wtto00/cordova-plugin-photo-album.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova",
+    "cordova-ios",
+    "cordova-android",
+    "photo",
+    "album"
+  ],
+  "author": "wtto00 <wtto00@outlook.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wtto00/cordova-plugin-photo-album/issues"
+  },
+  "homepage": "https://github.com/wtto00/cordova-plugin-photo-album#readme"
+}

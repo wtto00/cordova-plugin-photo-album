@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:rim="http://www.blackberry.com/ns/widgets"
+    xmlns:android="http://schemas.android.com/apk/res/android" id="cordova-plugin-photo-album" version="0.0.1">
+
+    <name>plugin-photo-album</name>
+
+    <!-- js module-->
+    <js-module src="www/photo-album.js" name="PhotoAlbum">
+        <clobbers target="PhotoAlbum" />
+    </js-module>
+
+    <!-- ios -->
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="PhotoAlbum">
+                <param name="ios-package" value="CDVPhotoAlbum" />
+            </feature>
+        </config-file>
+
+        <!-- Plugin source code -->
+        <header-file src="src/ios/CDVPhotoAlbum.h" />
+        <source-file src="src/ios/CDVPhotoAlbum.m" />
+
+    </platform>
+
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="PhotoAlbum">
+                <param name="android-package" value="wang.tato.photoAlbum.PhotoAlbum" />
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/PhotoAlbum.java" target-dir="src/wang/tato/photoAlbum" />
+    </platform>
+</plugin>
