@@ -19,6 +19,9 @@ jobs:
   Publish:
     needs: Release
     runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      content: write
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3.1.0
